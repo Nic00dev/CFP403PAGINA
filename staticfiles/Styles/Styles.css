@@ -1,0 +1,103 @@
+
+
+body {background-image: url('../images/as.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;}
+.contenedor {
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+
+}
+.modos{
+
+    display: flex;
+    align-content: right;
+    justify-content: right;
+}
+.menuI {background-color: aqua;
+  display: block;
+    list-style: none;
+    padding: 0 20px;
+    margin: 0;
+    align-items: center;
+    }
+
+.menuD {background-color: brown;
+    display: flex;
+    list-style: none;
+    padding: 0 20px;
+    margin-left: 0;
+    align-items: center;
+    }
+
+.menuD li{
+    margin-left: 40px;
+}
+    
+.inicio {background-color: blueviolet;
+    font-size: 80px;
+    }
+
+.menu li {
+    justify-content: right;
+    align-items: left;
+}
+
+.contenedores_info{
+    display: flex;
+    justify-content: space-between;
+    align-items:left;
+    list-style: none;
+    padding: 0 20px;
+    margin-left: 0px;
+
+}
+/* Menú / título */
+.contenedores_titulo {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px 20px;
+    margin: 0 auto 10px;
+    padding-top:100px ;
+    position: relative; /* para poder centrar el elemento absoluto */
+    
+}
+
+
+.botones{
+    display: flex;
+    justify-content: right;
+}
+
+.centrar{
+    background-color: blue;
+    text-align: center;
+    display: block;
+
+}
+
+/* Texto del medio centrado */
+.contenedores_titulo .centro {
+    position: absolute;       /* lo sacamos del flujo normal */
+    left: 50%;                /* llevamos al centro horizontal */
+    transform: translateX(-50%); /* centramos exactamente */
+    font-size: 20px;
+}
+
+.contenedores_titulo li:first-child {
+    margin-right: auto; /* empuja el primero a la izquierda */
+}
+
+.contenedores_titulo li:last-child {
+    margin-left: auto;  /* empuja el último a la derecha */
+}
+
+.logo{
+
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;}
+

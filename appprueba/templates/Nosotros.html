@@ -1,0 +1,50 @@
+
+
+{%extends 'base.html'%}
+{%load static%}
+{%block content%}
+
+<div class="text-white text-center mt-5"> <h1>Conoce sobre Nosotros</h1></div>
+<div class="container-fluid text-start ">
+  <div class="row pe-5">
+    <div class="col-6">
+      <h1><img src="{% static 'images/cfp403.jpg' %}" class="img-fluid ms-5 mt-5" alt="Logo"></h1>
+
+    </div>
+    <div class="col-6 text-center ps-5 mt-5 ">
+            <h1 class="fs-1 text-white text-start mt-5">49 Años de experiencia </h1>
+            <p class="fs-2 text-white text-start mt-5">El Centro de Formación Profesional Nº 403 "Dr. René Favaloro" fue el primero centro en funcionar en la ciudad de Mar del Plata abriendo sus puertas el 15 de junio de 1975, dependía del Ministerio de Educación Nacional. El 1º de enero de 1994, merced a la Ley Federal de Educación fue transferido a la Provincia de Buenos Aires. Actualmente posee una oferta de más de 40 cursos oficiales repartidos entre su Sede de Av. Colón 4251 y la sub-sede de Juan B. Justo 5199. Además, se realizan diversos cursos satélites en distintas instituciones de la ciudad. </p>
+
+    </div>
+
+  </div>
+</div>
+
+
+<div class="container-fluid bg-dark mt-5"> <p class="text-center fs-1 text-white">Mas Sobre Nosotros</p></div>
+
+
+<div class="container-fluid mt-4 pt-5 bg-dark">
+  <div class="row">
+    <div class="bg-dark col-12 col-md-4 text-center"><img src="{% static 'images/icono1.svg' %}" class="img-fluid w-25" alt="Logo"></div>
+    <div class="col-12 col-md-4 bg-dark text-center"> <img src="{% static 'images/icono2.svg' %}" class="img-fluid w-25" alt="Logo"></div>
+    <div class="col-12 col-md-4 bg-dark text-center"><img src="{% static 'images/icono3.svg' %}" class="img-fluid w-25" alt="Logo"></div>
+  </div>
+</div>
+
+<div class="container-fluid  pt-5 ">
+  <div class="row">
+    <div class="bg-dark col-12 col-md-4 fs-1 text-center text-white">Oferta Educativa</div>
+    <div class="col-12 col-md-4 bg-dark fs-1 text-center text-white"> Equipamiento</div>
+    <div class="col-12 col-md-4 bg-dark fs-1 text-center text-white">Certificados Oficiales</div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="bg-dark col-12 col-md-4 fs-4 text-center text-white">Más de 2000 alumnos se benefician todos los años con nuestra oferta educativa que comprende más de 60 cursos entre sede central, anexo y 5 subsedes.</div>
+    <div class="col-12 col-md-4 bg-dark fs-4 text-center text-white"> Actualizado en forma constante a través de diferentes planes de mejoras para ofrecer prácticas más cercanas a las actividades de la vida real.</div>
+    <div class="col-12 col-md-4 bg-dark fs-4 text-center text-white">Los alumnos que alcanzan sus objetivos reciben un Certificado Oficial otorgado por la Dirección General de Cultura y Educación de la Provincia de Buenos Aires.</div>
+  </div>
+</div>
+
+
+{%endblock%}

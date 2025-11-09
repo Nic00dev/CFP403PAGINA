@@ -1,0 +1,85 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+  </head>
+<body class = "bg-dark">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+<div class="container-fluid"
+     style="background-image: url({% static 'images/fondito.jpg' %});
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+       height: 600px;
+       position: relative;"
+>
+
+  <!-- Navbar encima del fondo -->
+  <nav class="navbar navbar-expand-lg bg-transparent position-absolute top-0 start-0 w-100">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img src="{% static 'images/logo_cfp.png' %}" class="img-fluid ms-5 mt-5" alt="Logo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white fs-3" href="/Nosotros">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link text-white fs-3" href="/Cursos">Cursos</a></li>
+          <li class="nav-item"><a class="nav-link text-white fs-3" href="/Contactos">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+</div>
+
+
+{% block content %}
+{% endblock %}
+
+</body>
+
+<footer class="mt-5 ms-5">
+
+
+ <nav class="navbar navbar-expand-lg bg-transparent">
+    <div class="container-fluid">
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link text-white fs-3" href="/Nosotros">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link text-white fs-3" href="/Cursos">Cursos</a></li>
+          <li class="nav-item"><a class="nav-link text-white fs-3" href="/Contactos">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link text-white fs-3" href="https://en.wikipedia.org/wiki/WhatsApp"><img src="{% static 'images/whatsap-50x50(1).png' %}" class="img-fluid w-100" alt="Logo"></div></a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="container-fluid justify-content-center text-center fs-3  mt-5">
+  <p class= text-white>Centro de Formación Profesional N° 403 - Av. Colón 4251 - Tel.: 4729145 - whatsapp: 2236680030</p>
+</div>
+
+<div class="container-fluid justify-content-center text-center fs-3  mt-5">
+  <p class="text-white"> Todos los derechos Reservados 2025 ©</p>
+</div>
+
+
+</footer>
+</html>

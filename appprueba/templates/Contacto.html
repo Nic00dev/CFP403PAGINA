@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container bg-dark text-center">
+  <h1 class="text-white mt-5 mb-5">Contacto</h1>
+  <img src="{% static 'images/contacto.jpg' %}" class="img-fluid" alt="...">
+  <h1 class="text-white mt-5">Llene el formulario de contacto</h1>
+
+  <form method="POST" action="">
+    {% csrf_token %}
+
+    <div class="text-start">
+      <h2 class="mb-3 text-white">Nombre</h2>
+      <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu Nombre">
+    </div>
+
+    <div class="text-start">
+      <h2 class="mt-5 text-white">Email</h2>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Tu Email">
+    </div>
+
+    <div class="mb-3 text-start">
+      <h2 class="text-white mt-5">Teléfono</h2>
+      <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Tu Teléfono">
+    </div>
+
+    <div class="mb-3 text-start">
+      <h2 class="text-white mt-5">Mensaje</h2>
+      <textarea class="form-control" id="mensaje" name="mensaje" rows="3" placeholder="Tu mensaje..."></textarea>
+    </div>
+
+    <div class="text-start mt-5">
+      <button type="submit" class="btn btn-success">Enviar</button>
+    </div>
+  </form>
+  {% if enviado %}
+  <div class="alert alert-success mt-3">Formulario enviado con éxito 😈</div>
+{% endif %}
+
+</div>
+
+{% endblock %}
